@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Layout Challenge</title>
+    <style type="text/css">
+   
+body {
+  background-image: url(img/back2.jpg);
+  background-size: contain;
+
+
+}
+
+
+
+   #container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+
+
+        
+    
+   }
+
+  .box {
+      /* display: inline-block;*/
+       width: 100%;
+       height: 150px;
+       background-color: #A76DE8;
+       border-radius: 10px;
+       border: double 5px #6735E8;
+       margin-top: 5px;
+       text-align: left
+       webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+       
+
+
+   }
+   h1 {
+    text-align: center;
+    color: white;
+    
+
+
+   }
+   .sidebar {
+    position: relative;
+    display: inline-block;
+    height: 320px;
+    width: 49.5%;
+    margin: 10px .5% 0px 0px;
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #15A6FF;
+    border: ridge 5px #A5D3FF;
+   }
+
+   .content {
+    position: relative;
+    display:inline-block;
+    height: 320px;
+    width: 49.5%;
+    margin: 10px 0px 0px .5%;
+    vertical-align: top;
+    background-color: #A5D3FF;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: outset 5px #15A6FF;
+   }
+
+   #linkToTop {
+      position: absolute;
+      bottom: 0px;
+      right: -80px;
+   }
+    #sidelinkToTop {
+      position: absolute;
+      bottom: 0px;
+      left: -80px;
+   }
+   #header {
+    
+    z-index: 100;
+    width: 100%;
+
+   }
+
+   p::first-line {
+    font-size: 1.5em;
+    font-weight: bold;
+
+   }
+
+   p::first-letter {
+      font-weight: bolder;
+      font-size: 2em;
+   }
+
+
+
+  
+
+
+
+
+   /*@media screen and (min-width: 800px) {
+
+    p {
+      font-size:  20px;
+
+      }
+    .box {
+      text-align: left;
+      background-color: #eee;
+      border-color: white;
+    }
+
+
+   }
+
+   @media screen and (min-width: 1200px) {
+
+    p {
+      color: blue;
+    }
+
+    .box {
+    border: dashed 10px red;
+    }
+
+
+
+   }*/
+  </style>
+  </head>
+<body>
+  <div id="container">
+    <div class="box" id = "header"><h1>Header</h1></div><!--
+    --><div class="box sidebar"><h1>Sidebar</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<p>
+    </div><!--
+    --><div class="box content"><h1>Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div><!--
+    -->
+    <div class="box sidebar"><h1>Sidebar 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<p><img src="arrow.png" id="sidelinkToTop">
+    </div><!--
+    --><div class="box content"><h1>Content 2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><img src="arrow.png" id="linkToTop"></div>
+    <div class="box"><h1>Footer</h1></div><!--
+    --></div>
+</body>
+</html>
